@@ -18,5 +18,11 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+    <key>NSCameraUsageDescription</key>
+    <string>You can take a picture in-app and use it.</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>You can save photos and videos to your library.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>You can also use your gallery photos/videos in the application</string>
 </dict>
 </plist>

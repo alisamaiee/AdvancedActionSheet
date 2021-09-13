@@ -32,6 +32,7 @@
 		948AC47B26EF49530017CE2A /* RoundCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948AC46626EF49530017CE2A /* RoundCheckBox.swift */; };
 		948AC47C26EF49530017CE2A /* AdvancedActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948AC46726EF49530017CE2A /* AdvancedActionSheet.swift */; };
 		948AC47E26EF49530017CE2A /* AdvancedActionSheetConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948AC46926EF49530017CE2A /* AdvancedActionSheetConfigs.swift */; };
+		948AC49B26EF50C70017CE2A /* UIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948AC49A26EF50C70017CE2A /* UIModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		948AC46626EF49530017CE2A /* RoundCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCheckBox.swift; sourceTree = "<group>"; };
 		948AC46726EF49530017CE2A /* AdvancedActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedActionSheet.swift; sourceTree = "<group>"; };
 		948AC46926EF49530017CE2A /* AdvancedActionSheetConfigs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedActionSheetConfigs.swift; sourceTree = "<group>"; };
+		948AC49A26EF50C70017CE2A /* UIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,10 +129,10 @@
 		948AC44F26EF49520017CE2A /* AdvancedActionSheet */ = {
 			isa = PBXGroup;
 			children = (
-				948AC45026EF49520017CE2A /* Cells */,
 				948AC45826EF49530017CE2A /* General */,
 				948AC45C26EF49530017CE2A /* Extensions */,
 				948AC46326EF49530017CE2A /* Views */,
+				948AC49926EF50B10017CE2A /* UIModels */,
 				948AC46726EF49530017CE2A /* AdvancedActionSheet.swift */,
 				948AC46926EF49530017CE2A /* AdvancedActionSheetConfigs.swift */,
 			);
@@ -184,11 +186,20 @@
 		948AC46326EF49530017CE2A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				948AC45026EF49520017CE2A /* Cells */,
 				948AC46426EF49530017CE2A /* PhotoLayout.swift */,
 				948AC46526EF49530017CE2A /* CameraView.swift */,
 				948AC46626EF49530017CE2A /* RoundCheckBox.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		948AC49926EF50B10017CE2A /* UIModels */ = {
+			isa = PBXGroup;
+			children = (
+				948AC49A26EF50C70017CE2A /* UIModels.swift */,
+			);
+			path = UIModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +323,7 @@
 				948AC46B26EF49530017CE2A /* AdcancedActionSheetComplexCell.swift in Sources */,
 				948AC47826EF49530017CE2A /* UIImageExtension.swift in Sources */,
 				948AC47726EF49530017CE2A /* StringExtension.swift in Sources */,
+				948AC49B26EF50C70017CE2A /* UIModels.swift in Sources */,
 				948AC47C26EF49530017CE2A /* AdvancedActionSheet.swift in Sources */,
 				948AC46E26EF49530017CE2A /* QuickGalleryTableViewCell.swift in Sources */,
 				948AC47A26EF49530017CE2A /* CameraView.swift in Sources */,
@@ -526,7 +538,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RDNGHWVMT3;
 				INFOPLIST_FILE = AdvancedActionSheetExamples/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -546,7 +558,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RDNGHWVMT3;
 				INFOPLIST_FILE = AdvancedActionSheetExamples/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
