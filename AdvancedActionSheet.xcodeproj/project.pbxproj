@@ -31,7 +31,6 @@
 		948AC47A26EF49530017CE2A /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948AC46526EF49530017CE2A /* CameraView.swift */; };
 		948AC47B26EF49530017CE2A /* RoundCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948AC46626EF49530017CE2A /* RoundCheckBox.swift */; };
 		948AC47C26EF49530017CE2A /* AdvancedActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948AC46726EF49530017CE2A /* AdvancedActionSheet.swift */; };
-		948AC47D26EF49530017CE2A /* CustomAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948AC46826EF49530017CE2A /* CustomAlertController.swift */; };
 		948AC47E26EF49530017CE2A /* AdvancedActionSheetConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948AC46926EF49530017CE2A /* AdvancedActionSheetConfigs.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +63,6 @@
 		948AC46526EF49530017CE2A /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		948AC46626EF49530017CE2A /* RoundCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCheckBox.swift; sourceTree = "<group>"; };
 		948AC46726EF49530017CE2A /* AdvancedActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedActionSheet.swift; sourceTree = "<group>"; };
-		948AC46826EF49530017CE2A /* CustomAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertController.swift; sourceTree = "<group>"; };
 		948AC46926EF49530017CE2A /* AdvancedActionSheetConfigs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedActionSheetConfigs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,7 +132,6 @@
 				948AC45C26EF49530017CE2A /* Extensions */,
 				948AC46326EF49530017CE2A /* Views */,
 				948AC46726EF49530017CE2A /* AdvancedActionSheet.swift */,
-				948AC46826EF49530017CE2A /* CustomAlertController.swift */,
 				948AC46926EF49530017CE2A /* AdvancedActionSheetConfigs.swift */,
 			);
 			path = AdvancedActionSheet;
@@ -309,7 +306,6 @@
 				948AC47526EF49530017CE2A /* ArrayExtension.swift in Sources */,
 				948AC47926EF49530017CE2A /* PhotoLayout.swift in Sources */,
 				948AC47E26EF49530017CE2A /* AdvancedActionSheetConfigs.swift in Sources */,
-				948AC47D26EF49530017CE2A /* CustomAlertController.swift in Sources */,
 				948AC46A26EF49530017CE2A /* AdcancedActionSheetActionWithImageCell.swift in Sources */,
 				948AC46F26EF49530017CE2A /* QuickGalleryCollectionViewCell.swift in Sources */,
 				948AC47326EF49530017CE2A /* CollectionExtension.swift in Sources */,
@@ -483,6 +479,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AdvancedActionSheet/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -507,6 +504,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AdvancedActionSheet/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -528,6 +526,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RDNGHWVMT3;
 				INFOPLIST_FILE = AdvancedActionSheetExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -547,6 +546,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RDNGHWVMT3;
 				INFOPLIST_FILE = AdvancedActionSheetExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
