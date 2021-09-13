@@ -145,6 +145,11 @@ public class AdvancedActionSheet: UIViewController {
         self.view.addSubview(cancelLabel)
         self.view.addSubview(contentTableView)
         
+        var bottomSpaceToCancelButton: CGFloat = -12
+        if #available(iOS 11.0, *) {
+            bottomSpaceToCancelButton = (UIApplication.shared.windows.first?.safeAreaInsets.bottom ?? 12) * -1
+        }
+        
         self.mainViewAnchorConstraint = mainView.topAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0)
         mainViewAnchorConstraint.isActive = true
         mainView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 10).isActive = true
@@ -153,7 +158,7 @@ public class AdvancedActionSheet: UIViewController {
         
         cancelView.trailingAnchor.constraint(equalTo: self.mainView.trailingAnchor, constant: 0).isActive = true
         cancelView.leadingAnchor.constraint(equalTo: self.mainView.leadingAnchor, constant: 0).isActive = true
-        cancelView.bottomAnchor.constraint(equalTo: self.mainView.bottomAnchor, constant: -11).isActive = true
+        cancelView.bottomAnchor.constraint(equalTo: self.mainView.bottomAnchor, constant: bottomSpaceToCancelButton).isActive = true
         cancelView.heightAnchor.constraint(equalToConstant: 57).isActive = true
         
         cancelLabel.trailingAnchor.constraint(equalTo: self.cancelView.trailingAnchor, constant: -6).isActive = true
