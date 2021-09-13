@@ -12,11 +12,11 @@ This CocoaPods library helps you perform calculation.
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Ali Samaiee" => "alisamaiee@live.com" }
 
-  spec.ios.deployment_target = "12.1"
+  spec.ios.deployment_target = "10.0"
   spec.swift_version = "5.0"
 
   spec.source        = { :git => "https://github.com/alisamaiee/AdvancedActionSheet.git", :tag => "#{spec.version}" }
-  spec.source_files  = "SwiftyLib/**/*.{h,m,swift}"
-  spec.resource_bundles = { "RiverFramework-iOS" => ["AdvancedActionSheet/**/*.{xcassets}"] }
+  spec.source_files  = "AdvancedActionSheet/**/*.{h,m,swift}"
+  spec.resource_bundles = { "AdvancedActionSheet" => ["AdvancedActionSheet/**/*.{xcassets}"] }
 
 end
