@@ -8,80 +8,90 @@
 import UIKit
 import AdvancedActionSheet
 
+class SampleButton: UIButton {
+    init() {
+        super.init(frame: .zero)
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.setTitleColor(.white, for: .normal)
+        self.backgroundColor = .systemBlue
+        self.layer.cornerRadius = 5
+        self.titleEdgeInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
 class ViewController: UIViewController {
     
     let selectableButton: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Selectable", for: .normal)
-        button.setTitleColor(.darkGray, for: .normal)
+        let button = SampleButton()
+        button.setTitle("Selectable Actions", for: .normal)
         return button
     }()
     
     let galleryButton: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Gallery", for: .normal)
-        button.setTitleColor(.darkGray, for: .normal)
+        let button = SampleButton()
+        button.setTitle("Gallery & Actions", for: .normal)
         return button
     }()
     
     let normalButton: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Normal", for: .normal)
-        button.setTitleColor(.darkGray, for: .normal)
+        let button = SampleButton()
+        button.setTitle("Normal Actions", for: .normal)
         return button
     }()
     
     let withIconButton: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("With Icon", for: .normal)
-        button.setTitleColor(.darkGray, for: .normal)
+        let button = SampleButton()
+        button.setTitle("Action With Image", for: .normal)
         return button
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         self.view.addSubview(selectableButton)
         self.selectableButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         self.selectableButton.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 50).isActive = true
+        self.selectableButton.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.7).isActive = true
         
         self.selectableButton.addTarget(self, action: #selector(selectableButtonAction), for: .touchUpInside)
         
         self.view.addSubview(galleryButton)
         self.galleryButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         self.galleryButton.topAnchor.constraint(equalTo: self.selectableButton.bottomAnchor, constant: 50).isActive = true
-        
+        self.galleryButton.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.7).isActive = true
+
         self.galleryButton.addTarget(self, action: #selector(galleryButtonAction), for: .touchUpInside)
         
         self.view.addSubview(normalButton)
         self.normalButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         self.normalButton.topAnchor.constraint(equalTo: self.galleryButton.bottomAnchor, constant: 50).isActive = true
-        
+        self.normalButton.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.7).isActive = true
+
         self.normalButton.addTarget(self, action: #selector(normalButtonAction), for: .touchUpInside)
         
         self.view.addSubview(withIconButton)
         self.withIconButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         self.withIconButton.topAnchor.constraint(equalTo: self.normalButton.bottomAnchor, constant: 50).isActive = true
-        
+        self.withIconButton.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.7).isActive = true
+
         self.withIconButton.addTarget(self, action: #selector(withIconButtonAction), for: .touchUpInside)
     }
 
     @objc func selectableButtonAction() {
         let alert = AdvancedActionSheet()
-        alert.addAction(item: .selectable(item: SelectableActionItem(id: 1, icon: nil, title: "Item 1", subtitle: "info 1", defaultSelectionStatus: false, drawBottomLine: true)))
-        alert.addAction(item: .selectable(item: SelectableActionItem(id: 2, icon: nil, title: "Item 2", subtitle: "", defaultSelectionStatus: true, drawBottomLine: true)))
-        alert.addAction(item: .selectable(item: SelectableActionItem(id: 3, icon: nil, title: "Item 3", subtitle: "info 3", defaultSelectionStatus: true, drawBottomLine: true)))
-        alert.addAction(item: .selectable(item: SelectableActionItem(id: 4, icon: nil, title: "Item 4", subtitle: "", defaultSelectionStatus: true, drawBottomLine: true)))
-        alert.addAction(item: .selectable(item: SelectableActionItem(id: 5, icon: nil, title: "Item 5", subtitle: "info 5", defaultSelectionStatus: false, drawBottomLine: true)))
+        alert.addAction(item: .selectable(item: SelectableActionItem(id: 1, icon: nil, title: "USA", subtitle: "United States", defaultSelectionStatus: false, drawBottomLine: true)))
+        alert.addAction(item: .selectable(item: SelectableActionItem(id: 2, icon: nil, title: "UK", subtitle: "United Kingdom", defaultSelectionStatus: true, drawBottomLine: true)))
+        alert.addAction(item: .selectable(item: SelectableActionItem(id: 3, icon: nil, title: "Germany", subtitle: "🇩🇪", defaultSelectionStatus: true, drawBottomLine: true)))
+        alert.addAction(item: .selectable(item: SelectableActionItem(id: 4, icon: nil, title: "Utopia", subtitle: "🤨", defaultSelectionStatus: true, drawBottomLine: true)))
+        alert.addAction(item: .selectable(item: SelectableActionItem(id: 5, icon: nil, title: "Ant Title", subtitle: "Any description", defaultSelectionStatus: false, drawBottomLine: true)))
         alert.addAction(item: .normal(id: 6, title: "Done", deactivatable: false, completionHandler: { (selectedIDs) in
             alert.dismiss(animated: true)
             print(selectedIDs)
         }))
-
+        
         alert.present(presenter: self, completion: nil)
     }
     
@@ -132,4 +142,3 @@ class ViewController: UIViewController {
         alert.present(presenter: self, completion: nil)
     }
 }
-

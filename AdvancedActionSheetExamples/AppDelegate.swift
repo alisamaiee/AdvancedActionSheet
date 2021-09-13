@@ -20,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func setRootViewController() {
         if self.window == nil {
             self.window = UIWindow(frame: UIScreen.main.bounds)
-            self.window?.backgroundColor = .white
         }
         let rootViewController = ViewController()
         self.window?.rootViewController?.removeFromParent()
