@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.summary      = "A CocoaPods library written in Swift"
 
   spec.description  = <<-DESC
-This CocoaPods library for iOS, offering you advanced alert actions sheet.
+This CocoaPods library for iOS, offering you advanced alert action sheet.
                    DESC
 
   spec.homepage     = "https://github.com/alisamaiee/AdvancedActionSheet"
