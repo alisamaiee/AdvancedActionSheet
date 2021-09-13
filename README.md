@@ -1,10 +1,10 @@
 # AdvancedActionSheet
 
-<img src="./AdvancedActionSheetExamples/ScreenShots/QuickGallerySR-480p.gif?raw" width="225" height="487">
-<img src="./AdvancedActionSheetExamples/ScreenShots/5.8-inch\ Screenshot\ 1.jpg" width="225" height="487">
-<img src="./AdvancedActionSheetExamples/ScreenShots/5.8-inch\ Screenshot\ 2.jpg" width="225" height="487">
-<img src="./AdvancedActionSheetExamples/ScreenShots/5.8-inch\ Screenshot\ 3.jpg" width="225" height="487">
-<img src="./AdvancedActionSheetExamples/ScreenShots/5.8-inch\ Screenshot\ 4.jpg" width="225" height="487">
+<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/QuickGallerySR-480p.gif?raw" width="225" height="487">
+<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/5.8-inch\ Screenshot\ 1.jpg?raw" width="225" height="487">
+<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/5.8-inch\ Screenshot\ 2.jpg?raw" width="225" height="487">
+<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/5.8-inch\ Screenshot\ 3.jpg?raw" width="225" height="487">
+<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/5.8-inch\ Screenshot\ 4.jpg?raw" width="225" height="487">
 
 ### Cocoapods
 
