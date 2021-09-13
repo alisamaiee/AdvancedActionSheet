@@ -1,10 +1,10 @@
 # AdvancedActionSheet
 
-<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/5.gif?raw" width="125" height="270">
-<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/1.jpg?raw" width="125" height="270">
-<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/2.jpg?raw" width="125" height="270">
-<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/3.jpg?raw" width="125" height="270">
-<img src="./AdvancedActionSheetExamples/ScreenShots/4.jpg?raw" width="125" height="270">
+<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/5.gif?raw" width="180" height="388">
+<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/1.jpg?raw" width="180" height="388">
+<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/2.jpg?raw" width="180" height="388">
+<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/3.jpg?raw" width="180" height="388">
+<img src="./AdvancedActionSheetExamples/ScreenShots/4.jpg?raw" width="180" height="388">
 
 ### Cocoapods
 
