@@ -17,6 +17,6 @@ This CocoaPods library helps you perform calculation.
 
   spec.source        = { :git => "https://github.com/alisamaiee/AdvancedActionSheet.git", :tag => "#{spec.version}" }
   spec.source_files  = "SwiftyLib/**/*.{h,m,swift}"
-  spec.resource_bundles = { "RiverFramework-iOS" => ["RiverFramework-iOS/chatsubmodule-ios/**/*.{xib,storyboard,xcassets,caf,wav,json,bundle}"] }
+  spec.resource_bundles = { "RiverFramework-iOS" => ["AdvancedActionSheet/**/*.{xcassets}"] }
 
 end
