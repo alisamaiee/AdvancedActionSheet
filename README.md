@@ -1,14 +1,11 @@
 # AdvancedActionSheet - iOS
-A customizable, full-feature, lightweight iOS framework to be used instead of UIAlertController.
+### A customizable, full-feature, lightweight iOS framework to be used instead of UIAlertController.
 
-<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/5.gif?raw" width="225" height="487">
 <img align="left" src="./AdvancedActionSheetExamples/ScreenShots/1.jpg?raw" width="225" height="487">
 <img align="left" src="./AdvancedActionSheetExamples/ScreenShots/2.jpg?raw" width="225" height="487">
-<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/3.jpg?raw" width="225" height="487">
 <img src="./AdvancedActionSheetExamples/ScreenShots/4.jpg?raw" width="225" height="487">
 
 ## Cocoapods
-
 AdvancedActionSheet is available through [CocoaPods](http://cocoapods.org). Simply add the following to your Podfile:
 
 ```ruby
@@ -39,6 +36,7 @@ alert.addAction(item: .normal(id: 1, title: "Action 2", completionHandler: { (_)
 }))
 alert.present(presenter: self, completion: nil)
 ```
+<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/3.jpg?raw" width="225" height="487">
 
 * add actions with image:
 ```swift
@@ -57,6 +55,7 @@ alert.addAction(item: .actionWithIcon(title: "Google Maps", titleColor: nil, ima
 }))
 alert.present(presenter: self, completion: nil)
 ```
+<img src="./AdvancedActionSheetExamples/ScreenShots/4.jpg?raw" width="225" height="487">
 
 * add selectable actions:
 ```swift
@@ -73,6 +72,7 @@ alert.addAction(item: .normal(id: 6, title: "Done", deactivatable: false, comple
 }))
 alert.present(presenter: self, completion: nil)
 ```
+<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/1.jpg?raw" width="225" height="487">
 
 * add gallery+camera action:
 ```swift
@@ -99,4 +99,24 @@ alert.addAction(item: .normal(id: 2, title: "iCloud", deactivatable: false, comp
     alert.dismiss(animated: true)
 }))
 alert.present(presenter: self, completion: nil)
+```
+<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/5.gif?raw" width="225" height="487">
+
+## Customize it:
+You can customize theme (colors), fonts and even language (texts). It will fit in your application.
+
+* Config theme (colors):
+```swift
+// Just call this method
+AdvancedActionSheetConfigs.configColors
+```
+* Config fonts:
+```swift
+// Just call this method
+AdvancedActionSheetConfigs.configFonts
+```
+* Config language (texts):
+```swift
+// Just call this method
+AdvancedActionSheetConfigs.configLanguage
 ```
