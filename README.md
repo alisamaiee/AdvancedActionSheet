@@ -21,4 +21,20 @@ end
 
 ## How to use
 
-Check the example for now, full README document soon :)
+### Import it to your project:
+```swift
+import AdvancedActionSheet
+```
+
+### Then create an instance of AdvancedActionSheet, add actions and present it:
+
+```swift
+let alert = AdvancedActionSheet()
+alert.addAction(item: .normal(id: 0, title: "Action 1", completionHandler: { (_) in
+    alert.dismiss(animated: true)
+ }))
+alert.addAction(item: .normal(id: 1, title: "Action 2", completionHandler: { (_) in
+    alert.dismiss(animated: true)
+ }))
+alert.present(presenter: self, completion: nil)
+```

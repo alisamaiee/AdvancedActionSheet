@@ -117,10 +117,10 @@ class ViewController: UIViewController {
     
     @objc func normalButtonAction() {
         let alert = AdvancedActionSheet()
-        alert.addAction(item: .normal(id: 0, title: "Action 1", deactivatable: false, completionHandler: { (_) in
+        alert.addAction(item: .normal(id: 0, title: "Action 1", completionHandler: { (_) in
             alert.dismiss(animated: true)
         }))
-        alert.addAction(item: .normal(id: 1, title: "Action 2", deactivatable: false, completionHandler: { (_) in
+        alert.addAction(item: .normal(id: 1, title: "Action 2", completionHandler: { (_) in
             alert.dismiss(animated: true)
         }))
 
