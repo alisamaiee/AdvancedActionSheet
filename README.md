@@ -36,7 +36,7 @@ alert.addAction(item: .normal(id: 1, title: "Action 2", completionHandler: { (_)
 }))
 alert.present(presenter: self, completion: nil)
 ```
-<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/3.jpg?raw" width="225" height="487">
+<img src="./AdvancedActionSheetExamples/ScreenShots/3.jpg?raw" width="225" height="487">
 
 * add actions with image:
 ```swift
@@ -72,7 +72,7 @@ alert.addAction(item: .normal(id: 6, title: "Done", deactivatable: false, comple
 }))
 alert.present(presenter: self, completion: nil)
 ```
-<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/1.jpg?raw" width="225" height="487">
+<img src="./AdvancedActionSheetExamples/ScreenShots/1.jpg?raw" width="225" height="487">
 
 * add gallery+camera action:
 ```swift
@@ -100,7 +100,7 @@ alert.addAction(item: .normal(id: 2, title: "iCloud", deactivatable: false, comp
 }))
 alert.present(presenter: self, completion: nil)
 ```
-<img align="left" src="./AdvancedActionSheetExamples/ScreenShots/5.gif?raw" width="225" height="487">
+<img src="./AdvancedActionSheetExamples/ScreenShots/5.gif?raw" width="225" height="487">
 
 ## Customize it:
 You can customize theme (colors), fonts and even language (texts). It will fit in your application.
