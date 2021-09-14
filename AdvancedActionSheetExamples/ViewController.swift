@@ -96,23 +96,26 @@ class ViewController: UIViewController {
     }
     
     @objc func galleryButtonAction() {
-        let alert = AdvancedActionSheet()
-        alert.addAction(item: .quickGalleryCollectionView(showCamera: true, completionHandler: { (assets, selectedActionIDs, sendAsFile) in
-            // Do the things you want
-        }, {
-            // Open camera as you wish (you can use UIImagePickerController)
-        }))
-        alert.addAction(item: .normal(id: 0, title: "Contacts", deactivatable: false, completionHandler: { (selectedIDs) in
-            alert.dismiss(animated: true)
-        }))
-        alert.addAction(item: .normal(id: 1, title: "Location", deactivatable: false, completionHandler: { (selectedIDs) in
-            alert.dismiss(animated: true)
-        }))
-        alert.addAction(item: .normal(id: 2, title: "iCloud", deactivatable: false, completionHandler: { (selectedIDs) in
-            alert.dismiss(animated: true)
-        }))
+let alert = AdvancedActionSheet()
+alert.addAction(item: .quickGalleryCollectionView(showCamera: true, completionHandler: { (assets, selectedActionIDs, sendAsFile) in
+    // Do the things you want
+}, {
+    // Open camera as you wish (you can use UIImagePickerController)
+}))
+alert.addAction(item: .normal(id: 0, title: "Contacts", deactivatable: false, completionHandler: { (selectedIDs) in
+    // User tapped on this action, do appropriate tasks
+    alert.dismiss(animated: true)
+}))
+alert.addAction(item: .normal(id: 1, title: "Location", deactivatable: false, completionHandler: { (selectedIDs) in
+    // User tapped on this action, do appropriate tasks
+    alert.dismiss(animated: true)
+}))
+alert.addAction(item: .normal(id: 2, title: "iCloud", deactivatable: false, completionHandler: { (selectedIDs) in
+    // User tapped on this action, do appropriate tasks
+    alert.dismiss(animated: true)
+}))
 
-        alert.present(presenter: self, completion: nil)
+alert.present(presenter: self, completion: nil)
     }
     
     @objc func normalButtonAction() {
