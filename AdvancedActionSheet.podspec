@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AdvancedActionSheet"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.6"
   spec.summary      = "A CocoaPods library written in Swift"
 
   spec.description  = <<-DESC
