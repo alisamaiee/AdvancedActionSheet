@@ -15,7 +15,7 @@ public struct AdvancedActionSheetConfigs {
      You can change alert texts to fit your application language
      Passing nil will make no change on related property
      */
-    static func configLanguage(cancel: String? = nil,
+    public static func configLanguage(cancel: String? = nil,
                                send: String? = nil,
                                sendAsFile: String? = nil,
                                ok: String? = nil,
@@ -37,7 +37,7 @@ public struct AdvancedActionSheetConfigs {
      You can change alert colors to fit your application theme
      Passing nil will make no change on related property
      */
-    static func configColors(text: UIColor? = nil,
+    public static func configColors(text: UIColor? = nil,
                              alertDivider: UIColor? = nil,
                              alertBackground: UIColor? = nil,
                              checkBoxBorder: UIColor? = nil,
@@ -55,7 +55,7 @@ public struct AdvancedActionSheetConfigs {
      You can change alert fonts to fit your application appearance
      Passing nil will make no change on related property
      */
-    static func configFonts(title: UIFont? = nil,
+    public static func configFonts(title: UIFont? = nil,
                             subtitle: UIFont? = nil,
                             cancel: UIFont? = nil,
                             videoDuration: UIFont? = nil) {
